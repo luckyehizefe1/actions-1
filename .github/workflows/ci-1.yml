@@ -10,17 +10,11 @@ jobs:
           uses: actions/checkout@v5
 
         - name: List and Read file
-          run: |
-            echo "My first Github Action Job"
-            ls -ltra
-            cat README.md
-
-        - name: Generate ASCII Artwork
-          run: COWSAY -f dragon "Run for cover, I am a DRAGON....RAWR" >> dragon.txt   
+          run: echo "My first Github Action Job"
  
-      # - name: Liat files
-      #   run: ls -irl
+        - name: List files
+          run: ls -lrt
 
-      # - name: Read file
-      #   run: cat README.md
+        - name: Read file
+          run: cat README.md
  
